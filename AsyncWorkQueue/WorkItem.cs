@@ -14,7 +14,7 @@ namespace AsyncWorkQueue
 
 		internal readonly Func<WorkItem, Task> cancelled;
 
-		// NOTE: item must be idempotent for this feature
+		// NOTE: item must be idempotent to use this feature
 		public bool Retry { get; }
 
 		internal byte retries;
@@ -24,9 +24,7 @@ namespace AsyncWorkQueue
 		internal Exception ex;
 
 		public bool Used { get; internal set; }
-		
-		// TODO: clone method
-		
+
 		internal WorkItem() { }
 
 		public WorkItem(Func<Task> action, Func<WorkItem, Task> success = null,

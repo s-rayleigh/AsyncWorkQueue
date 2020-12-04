@@ -7,8 +7,6 @@ namespace AsyncWorkQueue
 	public class AsyncWorkQueue
 	{
 		private readonly AsyncQueue<WorkItem> queue;
-		
-		// TODO: global async error, success and cancelled handlers
 
 		public AsyncWorkQueue(CancellationToken stopToken = default)
 		{

@@ -2,6 +2,11 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
+		<Title>Async Work Queue</Title>
+		<Description>A simple lib that allows to enqueue work on background.</Description>
+		<Authors>rayleigh</Authors>
+		<Copyright>Vladislav Pashaiev</Copyright>
+		<RepositoryUrl>https://github.com/s-rayleigh/AsyncWorkQueue</RepositoryUrl>
 	</PropertyGroup>
 
 </Project>
